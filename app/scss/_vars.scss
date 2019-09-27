@@ -1,0 +1,40 @@
+@import "_mixins/include-media";
+// fonts
+$default-font: "roboto-example", sans-serif;
+
+// colors
+$white: #fff;
+$black: #000;
+$trans: transparent;
+$accent: orange;
+$text: #333;
+
+// breakpoints
+$breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
+
+// gaps
+$gutter: 15px;
+$totalWidth: 1170px;
+
+// mixins
+@mixin wrap($width: $totalWidth) {
+    margin: 0 auto;
+    padding: 0 $gutter;
+    max-width: $width + $gutter * 2;
+}
+
+@mixin row($gutter: $gutter) {
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+}
+
+@mixin col($gutter: $gutter) {
+    padding-left: $gutter;
+    padding-right: $gutter;
+}
+
+@mixin text($size: 16px, $height: 20px, $spacing: 0) {
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $spacing;
+}

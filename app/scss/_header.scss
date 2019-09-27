@@ -1,0 +1,7 @@
+.header {
+    padding: $gutter*2 0;
+    
+    &__content {
+        @include wrap;
+    }
+}

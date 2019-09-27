@@ -1,0 +1,45 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+// section
+@import "header";
+@import "footer";
+@import "hero";
+
+// components
+@import "./_components/logo";
+
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    /* stylelint-disable */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    /* stylelint-enable */
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.25;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+header,
+footer {
+	flex-shrink: 0;
+}
+
+main {
+	flex: 1 0 auto;
+}
