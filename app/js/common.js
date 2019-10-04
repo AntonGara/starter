@@ -1,5 +1,3 @@
-$(function() {
-
-	// Custom JS
-
-});
+window.onload = function() {
+	// custom code
+};
